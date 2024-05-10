@@ -28,7 +28,7 @@ app.get("/", (req, res) => {
 app.use("/robots", router);
 
 mongoose
-  .connect(uri)
+  .connect("mongodb+srv://agampandey:1234@dashboard-data.9e73qbs.mongodb.net/bots-collection?retryWrites=true&w=majority&appName=dashboard-data")
   .then(() => {
     console.log("App connected to database");
     app.listen(PORT, () => {
