@@ -10,20 +10,11 @@ const app = express();
 
 app.use(express.json());
 
-// app.use(cors());
-
-app.use(
-  cors({
-    origin: "https://dashboard-five-rust.vercel.app",
-    method: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type"],
-  })
-);
-
 app.get("/", (req, res) => {
-  res.status(234).send("data received");
+  res.status(234).send("Hello World!");
 });
 
+app.use(cors());
 
 app.use("/robots", router);
 
