@@ -32,7 +32,7 @@ const Home = () => {
     console.log(selectedOptionId);
     if (selectedOptionId) {
       axios
-        .get(`http://localhost:5555/robots/${selectedOptionId}`)
+        .get(`https://dashboard-api-lac.vercel.app/${selectedOptionId}`)
         .then((response) => {
           setInfo(response.data);
           console.log(response.data);
