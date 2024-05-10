@@ -14,7 +14,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://dashboard-api-lac.vercel.app/robots")
+      .get("http://localhost:5555/robots")
       .then((response) => {
         setOptions(response.data.data);
       })
@@ -32,7 +32,7 @@ const Home = () => {
     console.log(selectedOptionId);
     if (selectedOptionId) {
       axios
-        .get(`https://dashboard-api-lac.vercel.app/${selectedOptionId}`)
+        .get(`http://localhost:5555/robots/${selectedOptionId}`)
         .then((response) => {
           setInfo(response.data);
           console.log(response.data);
