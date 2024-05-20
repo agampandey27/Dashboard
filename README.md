@@ -1,4 +1,4 @@
-1) Create a database in mongoDB or in whatever database you like 
+1) Create a database in mongoDB or in any database you like 
 2) I've created database using mongoDB and in my zip you will get the .env file and nessecary mongoDB url connections 
 3) Then i have created RESTful api's using express 
 4) There are all the major 5 apis for get all ,get by id,post , put by id , delete by id .
